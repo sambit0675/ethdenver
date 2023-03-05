@@ -1,0 +1,62 @@
+.benefits {
+    height: 105vh;
+    background-size: 100% 100%;
+
+    &-heading h1 {
+        font-size: 60px;
+        line-height: 55px;
+        color: #4D6DE3;
+        font-weight: 700;
+    }
+
+    h1 {
+        padding-top: 10%;
+        text-align: center;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 0 auto 0 auto;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            height: 95px;
+            width: 100px;
+        }
+
+        &-students, &-institutes {
+            width: 33vw;
+
+            h2 {
+                padding-top: 10px;
+                font-size: 45px;
+                line-height: 30px;
+                color: #4D6DE3;
+                font-weight: 700;
+            }
+
+            p {
+                font-family: "montserrat";
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    } 
+
+    100% {
+        transform: rotate(359deg);
+    }
+}
+
+.rotate-logo {
+    animation: rotate infinite 3s;  
+}
